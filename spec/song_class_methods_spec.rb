@@ -96,7 +96,7 @@ describe "Song Class Methods" do
   describe '.destroy_all' do
     it 'clears all the song instances from the @@all array' do
       Song.destroy_all
-      expect(Song.all).to eq(\s-\s|\.)
+      expect(Song.all).to eq([])
     end
   end
 end
