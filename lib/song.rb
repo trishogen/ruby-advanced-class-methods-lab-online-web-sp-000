@@ -47,5 +47,7 @@ class Song
     split_name = filename.split("/ - /")
     song.artist_name = split_name[0]
     song.name = split_name[1]
+    @@all << song
+    song
   end
 end
