@@ -47,7 +47,11 @@ class Song
     split_name = filename.split(/\s-\s|\./)
     song.artist_name = split_name[0]
     song.name = split_name[1]
-    @@all << song
     song
+  end
+
+  def self.create_from_filename(filename)
+    self.new_from_filename(filename)
+    @@all << song
   end
 end
